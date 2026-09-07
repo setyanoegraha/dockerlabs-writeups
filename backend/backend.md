@@ -44,9 +44,9 @@ Nmap done: 1 IP address (1 host up) scanned in 13.25 seconds
 
 2. I browsed the exposed web application and identified the home view and login portal.
 
-![](image-1.png)
+![](images/img-1.png)
 
-![](image.png)
+![](images/img.png)
 
 3. I observed SQL injection behavior in the `username` parameter and captured the POST request for automated testing.
 

@@ -123,15 +123,15 @@ The scan reveals that `login.php` is the only publicly accessible page; all othe
 
 After several attempts testing different input fields, it is determined that the `password` parameter is injectable. A SQL injection payload is crafted to bypass the authentication logic entirely.
 
-![SQL injection payload being entered into the login form](image.png)
+![SQL injection payload being entered into the login form](images/img.png)
 
 The injection succeeds and authentication is bypassed, granting access to the internal dashboard.
 
-![Successful login bypass and dashboard access](image-1.png)
+![Successful login bypass and dashboard access](images/img-1.png)
 
 Once inside, a note is discovered on the dashboard that hints at the existence of a sensitive file.
 
-![Note discovered after logging in](image-2.png)
+![Note discovered after logging in](images/img-2.png)
 
 ### Post-Authentication Directory Enumeration
 

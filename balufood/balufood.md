@@ -108,11 +108,11 @@ The scan revealed a `/login` endpoint and an `/admin` panel that redirected to i
 
 Default credentials `admin:admin` were tried against the login form and succeeded, granting access to the admin panel.
 
-![](image-1.png)
+![](images/img-1.png)
 
 The admin panel displayed SSH credentials for the `sysadmin` user.
 
-![](image.png)
+![](images/img.png)
 
 ### SSH Access as sysadmin
 

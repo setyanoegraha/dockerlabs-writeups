@@ -195,9 +195,9 @@ Three credentials were dumped. The `joe` account with the standout password `MiC
 
 **5. Logging in as joe and Triggering the Reverse Shell**
 
-![](image-1.png)
+![](images/img-1.png)
 
-![](image-2.png)
+![](images/img-2.png)
 
 A netcat listener was started on the attacker machine.
 
@@ -209,7 +209,7 @@ listening on [any] 4444 ...
 
 A reverse shell was triggered through the command injection panel inside the application.
 
-![](image-3.png)
+![](images/img-3.png)
 
 **6. Catching the Shell and Stabilising the TTY**
 

@@ -95,7 +95,7 @@ Finished
 
 Gobuster found the standard Tomcat directories, including `docs`, `examples`, and `manager`, but nothing that provided credentials directly.
 
-![alt text](image.png)
+![alt text](images/img.png)
 
 ---
 

@@ -71,7 +71,7 @@ The scan revealed only port 80 open. The HTTP title indicated a redirect to `htt
 
 With the hostname resolved, the WordPress site became accessible.
 
-![](image.png)
+![](images/img.png)
 
 ---
 
@@ -378,7 +378,7 @@ Finished
 
 Browsing `http://bicho.dl/wp-content/debug.log` confirmed that WordPress was logging failed login attempts, including the User-Agent string of the requesting client.
 
-![](image-1.png)
+![](images/img-1.png)
 
 **7. Encoding the Reverse Shell Payload**
 
@@ -533,13 +533,13 @@ The tunnel was established, forwarding the internal port 5000 to port 3000 on th
 
 With the tunnel active, the Flask application was accessible at `http://127.0.0.1:3000/`.
 
-![](image-2.png)
+![](images/img-2.png)
 
 **14. Accessing the /console Endpoint**
 
 The Werkzeug interactive debugger console was found at `/console`, providing direct Python code execution in the context of the application's running process.
 
-![](image-3.png)
+![](images/img-3.png)
 
 **15. Executing a Reverse Shell via the Console**
 
@@ -551,7 +551,7 @@ A listener was started and a reverse shell was executed through the Werkzeug con
 listening on [any] 8888 ...
 ```
 
-![](image-4.png)
+![](images/img-4.png)
 
 **16. Receiving the Shell as app and Stabilising**
 

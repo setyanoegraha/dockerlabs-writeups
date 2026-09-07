@@ -197,11 +197,11 @@ Finished
 ===============================================================
 ```
 
-![](image.png)
+![](images/img.png)
 
 5. Directory listing exposed application files, and reviewing `server.js` revealed the credential material used in the next stage.
 
-![](image-1.png)
+![](images/img-1.png)
 
 ## Initial Access
 
@@ -263,7 +263,7 @@ lovely@93a391885ec6:~$ sudo /usr/bin/nano
 
 2. The nano GTFOBins method was used to invoke a root shell through spell checker substitution.
 
-![](image-2.png)
+![](images/img-2.png)
 
 ```bash
 lovely@93a391885ec6:~$ sudo nano -s /bin/bash
@@ -271,7 +271,7 @@ lovely@93a391885ec6:~$ sudo nano -s /bin/bash
 
 3. After entering `/bin/bash` inside nano and triggering the execution flow, the shell context switched to root.
 
-![](image-3.png)
+![](images/img-3.png)
 
 ```bash
 root@93a391885ec6:~# id;whoami;hostname;pwd;ls -la

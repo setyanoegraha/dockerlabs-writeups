@@ -71,7 +71,7 @@ Curling the default Apache page returned the standard HTML but with an HTML comm
 -->
 ```
 
-![](image.png)
+![](images/img.png)
 
 **4. Gobuster Directory Enumeration**
 
@@ -108,7 +108,7 @@ Finished
 
 The Brainfuck program was decoded to obtain the SSH credential.
 
-![](image-1.png)
+![](images/img-1.png)
 
 The decoded output was `agua:bebeaguaqueessano`.
 

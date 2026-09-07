@@ -110,7 +110,7 @@ Backup                  [Status: 200, Size: 22554, Words: 4271, Lines: 812, Dura
 
 Se descubrió el subdominio `backup.internal.dl` y fue resuelto hacia el objetivo. Al navegar a él se reveló el SysVault Backup Manager, una aplicación web interna con un campo de entrada "Directory Inspector" etiquetado prominentemente con el badge "SHELL EXEC".
 
-![SysVault Backup Manager](image.png)
+![SysVault Backup Manager](images/img.png)
 
 ---
 

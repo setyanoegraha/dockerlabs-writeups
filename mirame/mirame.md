@@ -64,11 +64,11 @@ Nmap done: 1 IP address (1 host up) scanned in 10.75 seconds
 
 The HTTP service exposed a login interface on port 80.
 
-![](image.png)
+![](images/img.png)
 
 2. I tested single quote input in the login form and observed a backend error condition consistent with injectable SQL handling.
 
-![](image-1.png)
+![](images/img-1.png)
 
 3. I captured the authentication request so it could be replayed safely during SQL injection testing.
 
@@ -188,7 +188,7 @@ Finished
 ===============================================================
 ```
 Turn out the password was the directory.
-![](image-2.png)
+![](images/img-2.png)
 
 4. Inside `/directoriotravieso/`, I discovered and downloaded `miramebien.jpg`, then validated the file type.
 
@@ -320,7 +320,7 @@ carlos@1901100352ff:~$ find / -type f -perm -4000 -exec ls -la {} \; 2>/dev/null
 
 2. I validated the exploitation path using the known `find` SUID technique.
 
-![](image-3.png)
+![](images/img-3.png)
 
 3. I executed the SUID abuse primitive to spawn a privileged shell, then converted access into a stable root login context.
 

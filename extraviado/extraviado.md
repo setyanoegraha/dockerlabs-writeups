@@ -76,7 +76,7 @@ The scan revealed SSH on port 22 and Apache on port 80. The default Ubuntu Apach
 
 The `index.html` source contained base64-encoded strings embedded within the page content, pointing toward valid credentials.
 
-![](image.png)
+![](images/img.png)
 
 **4. Decoding the Base64 Credentials**
 

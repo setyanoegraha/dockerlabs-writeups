@@ -86,9 +86,9 @@ Nmap done: 1 IP address (1 host up) scanned in 10.00 seconds
 
 Visiting the web server on port 80 shows a simple page. Inspecting the page source reveals interesting hints embedded in the HTML.
 
-![Web application landing page](image.png)
+![Web application landing page](images/img.png)
 
-![Page source code with embedded hints](image-1.png)
+![Page source code with embedded hints](images/img-1.png)
 
 ---
 
@@ -145,7 +145,7 @@ by Ben "epi" Risher 🤓                 ver: 2.13.0
 
 The `/secret/` endpoint is shown below:
 
-![Secret directory index page](image-3.png)
+![Secret directory index page](images/img-3.png)
 
 **5. Retrieving the Leaked Credentials**
 
@@ -221,7 +221,7 @@ MySQL [files_secret]> select * from rutas;
 
 The `/unprivate/secret` web path, as seen on the server:
 
-![Secret web directory](image-2.png)
+![Secret web directory](images/img-2.png)
 
 **7. Enumerating the Hidden Endpoint**
 

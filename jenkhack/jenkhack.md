@@ -86,7 +86,7 @@ Three ports were open: Apache on 80, Jetty (SSL) on 443, and Jetty on 8080. The 
 
 The web application on port 80 served the "Hacker Nexus" landing page.
 
-![](image.png)
+![](images/img.png)
 
 A curl request to the Jenkins login path on port 8080 confirmed Jenkins version 2.401.2 via the `X-Jenkins` response header.
 
@@ -101,17 +101,17 @@ X-Jenkins-Session: db2fda23
 
 Credentials inferred from context were used to authenticate at the Jenkins login panel.
 
-![](image-1.png)
+![](images/img-1.png)
 
 Upon login, the Jenkins dashboard was accessible.
 
-![](image-2.png)
+![](images/img-2.png)
 
 **5. Navigating to the Script Console**
 
 From the Jenkins dashboard, the Groovy Script Console under Manage Jenkins was used to execute arbitrary system commands.
 
-![](image-3.png)
+![](images/img-3.png)
 
 A netcat listener was started on the attacker machine.
 
@@ -123,7 +123,7 @@ listening on [any] 4444 ...
 
 A Groovy `cmd.execute()` reverse shell payload was submitted through the Script Console.
 
-![](image-4.png)
+![](images/img-4.png)
 
 **6. Catching the Shell and Stabilising the TTY**
 
@@ -210,7 +210,7 @@ jenkins@2bdcce8eb51f:/var/www/jenkhack$ cat note.txt
 jenkhack:C1V9uBl8!'Ci*`uDfP
 ```
 
-![](image-5.png)
+![](images/img-5.png)
 
 The value `C1V9uBl8!'Ci*\`uDfP` was a base85-encoded string. Decoding it yielded the plaintext password for `jenkhack`.
 

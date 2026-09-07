@@ -281,9 +281,9 @@ SSH USER: joshua
 SSH PASSWORD: 60a3f3cb2811ddcea679773863baabd1c78420a13b197b16725905230589bbdb
 ```
 
-![alt text](image.png)
+![alt text](images/img.png)
 
-![alt text](image-1.png)
+![alt text](images/img-1.png)
 
 With the credentials in hand, SSH access was established as the user `joshua`.
 

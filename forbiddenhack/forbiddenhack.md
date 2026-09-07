@@ -71,7 +71,7 @@ Only port 80 was open. The Apache default page was served, indicating a virtual 
 
 Browsing the target revealed the 403 bypass challenge and the virtual host.
 
-![](image.png)
+![](images/img.png)
 
 **4. Adding the Virtual Host**
 
@@ -229,7 +229,7 @@ The tool `php-filter-chain-generator` (from `https://github.com/synacktiv/php_fi
 
 The generated chain was passed to the `pages` parameter alongside `&cmd=id`. The full chain generation and RCE confirmation are shown below.
 
-![](image-1.png)
+![](images/img-1.png)
 
 ### Delivering the Reverse Shell
 

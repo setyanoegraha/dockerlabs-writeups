@@ -73,7 +73,7 @@ The discovery reveals interesting endpoints including a login page, a registrati
 
 4. The landing page of the web application was examined:
 
-![](image.png)
+![](images/img.png)
 
 The application presents itself as a hosting and domain registration service. The interface offers a search functionality for checking domain availability.
 
@@ -81,25 +81,25 @@ The application presents itself as a hosting and domain registration service. Th
 
 5. A new user account was registered through the `registro.php` page, and after logging in, the user panel became accessible:
 
-![](image-1.png)
+![](images/img-1.png)
 
 6. The domain search functionality was tested with SQL injection payloads to check for input sanitization issues:
 
-![](image-2.png)
+![](images/img-2.png)
 
 7. While the initial injection attempts did not yield visible results on the page:
 
-![](image-3.png)
+![](images/img-3.png)
 
 8. Closer inspection of the page source code revealed the underlying mechanism. The search query is sent as a JSON payload to an API endpoint at `/lib/kms_api.php`:
 
-![](image-4.png)
+![](images/img-4.png)
 
 9. Burp Suite (or a similar proxy) was used to intercept the outgoing request. The raw POST body showed the exact JSON structure being transmitted:
 
-![](image-5.png)
+![](images/img-5.png)
 
-![](image-6.png)
+![](images/img-6.png)
 
 The captured request demonstrates the exact format used by the application to communicate with the backend API:
 

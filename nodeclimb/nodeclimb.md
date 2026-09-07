@@ -205,7 +205,7 @@ User mario may run the following commands on f0761a3c0a57:
 
 2. I validated the technique using Node.js privilege escalation guidance, then switched to a payload that spawned an interactive root shell.
 
-![](image.png)
+![](images/img.png)
 
 `require("child_process").spawn("sudo", ["-i"], {stdio: [0, 1, 2]})`
 

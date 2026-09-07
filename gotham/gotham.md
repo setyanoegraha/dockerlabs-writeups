@@ -102,7 +102,7 @@ Finished
 
 The web application on port 80 presents a login form.
 
-![](image.png)
+![](images/img.png)
 
 Viewing the page source reveals a comment with default credentials.
 
@@ -134,7 +134,7 @@ Viewing the page source reveals a comment with default credentials.
 
 Logging in with `guest:guest` returns a JWT token.
 
-![](image-1.png)
+![](images/img-1.png)
 
 The token was saved to a file and cracked with John.
 
@@ -156,19 +156,19 @@ Session completed.
 
 The JWT secret is `batman`. The token was then forged to assign the `admin` role.
 
-![](image-2.png)
+![](images/img-2.png)
 
 After replacing the session cookie with the forged admin token and refreshing, the admin panel becomes accessible.
 
-![](image-4.png)
+![](images/img-4.png)
 
 The admin panel reveals a command execution feature.
 
-![](image-3.png)
+![](images/img-3.png)
 
 The RCE feature is used to execute a reverse shell.
 
-![](image-5.png)
+![](images/img-5.png)
 
 A netcat listener was set up on the attacking machine.
 
@@ -180,7 +180,7 @@ listening on [any] 4444 ...
 
 The payload was triggered.
 
-![](image-6.png)
+![](images/img-6.png)
 
 The reverse shell connects back.
 

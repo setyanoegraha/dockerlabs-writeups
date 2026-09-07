@@ -313,13 +313,13 @@ The attack completed in **sixteen seconds**, trying only 390 passwords before fi
 
 **6.** Navigate to the WordPress login page at `http://172.17.0.2/wordpress/wp-login.php` and authenticate with the recovered credentials:
 
-![](image.png)
+![](images/img.png)
 
 The WordPress admin dashboard was accessible. The update notification prompt was dismissed to proceed directly to the Theme Editor. WordPress's built-in Theme Editor, accessible under Appearance, allows authenticated administrators to directly modify the PHP source files of installed themes. The active theme's `functions.php` file was selected as the injection target because it is loaded on every WordPress page request, making payload execution trivial to trigger.
 
 **7.** Navigate to the Theme Editor, open `functions.php` for the active theme, and inject a PHP reverse shell payload:
 
-![](image-2.png)
+![](images/img-1.png)
 
 A PHP reverse shell was appended to `functions.php`, configured to connect back to the attacker's IP on port 4444. Once saved, any HTTP request to the WordPress site would cause the web server to execute the injected code.
 
@@ -405,7 +405,7 @@ Most entries in this list were expected: `chsh`, `umount`, `su`, `mount`, `newgr
 
 **13.** Consult GTFOBins to confirm the `env` SUID exploitation technique:
 
-![](image-3.png)
+![](images/img-2.png)
 
 The GTFOBins entry for `env` with the SUID bit confirmed the technique: invoking `/usr/bin/env /bin/bash -p` causes bash to start in privileged mode (`-p`), which prevents bash from dropping the effective UID to match the real UID. Since `env` was SUID root, the effective UID inherited by the resulting process was `0`.
 

@@ -143,7 +143,7 @@ Table: users
 
 The `users` table contained three sets of credentials. These were used to authenticate into the billing panel.
 
-![](image.png)
+![](images/img.png)
 
 Once logged in, the `panel.php` page displayed bills with an `id` parameter in the URL. The identifier followed a predictable pattern: one letter followed by three digits. A brute force attack using `crunch` piped into `ffuf` was launched to find valid bill IDs.
 
@@ -186,7 +186,7 @@ c724                    [Status: 200, Size: 5994, Words: 2624, Lines: 224, Durat
 
 The bill ID `c724` returned a different response size. The page contained credentials for the `duque` user, including the SSH password.
 
-![](image-1.png)
+![](images/img-1.png)
 
 With these credentials, an SSH session was established as the `duque` user.
 

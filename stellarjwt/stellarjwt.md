@@ -76,7 +76,7 @@ The scan revealed SSH on port 22 and Apache on port 80 titled "NASA Hackeada".
 
 The web application served a NASA-themed page.
 
-![](image.png)
+![](images/img.png)
 
 **4. Gobuster Directory Enumeration**
 
@@ -106,9 +106,9 @@ A `/universe/` directory was discovered. Browsing it revealed biographical infor
 
 **5. Inspecting /universe/**
 
-![](image-1.png)
+![](images/img-1.png)
 
-![](image-2.png)
+![](images/img-2.png)
 
 The page presented information identifying a person named Johann Gottfried Galle, with the nickname "galle". This OSINT data was fed into `cupp` to generate a targeted wordlist.
 

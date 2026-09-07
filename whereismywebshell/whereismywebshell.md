@@ -83,7 +83,7 @@ Finished
 
 Gobuster found `shell.php`, which returned a 500 status code. This hinted at a PHP script that expects a specific parameter and fails without it.
 
-![alt text](image.png)
+![alt text](images/img.png)
 
 **4. Parameter Fuzzing with Ffuf**
 

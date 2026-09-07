@@ -84,7 +84,7 @@ Authentication required
 </body></html>  
 ```
 
-![](image.png)
+![](images/img.png)
 
 ### 4. Directory enumeration
 Content discovery on port 8080 surfaced multiple Jenkins routes, including `/404`, which later exposed versioning evidence.
@@ -143,7 +143,7 @@ Finished
 ### 5. Version disclosure from 404 page
 Access to the custom error page revealed Jenkins version details used for exploit matching.
 
-![](image-1.png)
+![](images/img-1.png)
 
 ---
 

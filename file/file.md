@@ -128,9 +128,9 @@ The file contained an MD5 hash. The web application was investigated next.
 
 The Apache default page source code contained a developer note pointing toward a file upload functionality.
 
-![](image.png)
+![](images/img.png)
 
-![](image-1.png)
+![](images/img-1.png)
 
 **5. Gobuster Directory Enumeration**
 
@@ -168,13 +168,13 @@ Finished
 
 **6. Inspecting the Upload Form and Attempting Upload**
 
-![](image-4.png)
+![](images/img-4.png)
 
-![](image-2.png)
+![](images/img-2.png)
 
 Uploading a file with a standard PHP extension was rejected by the server.
 
-![](image-3.png)
+![](images/img-3.png)
 
 **7. Fuzzing PHP Extensions to Find an Accepted One**
 
@@ -203,7 +203,7 @@ A loop tested all common PHP extension variants against the upload endpoint, wri
 
 The `.phar` extension was accepted. The webshell was now accessible at `/uploads/shell.phar`.
 
-![](image-5.png)
+![](images/img-5.png)
 
 **8. Confirming RCE**
 
@@ -396,7 +396,7 @@ StegSeek 0.6 - https://github.com/RickdeJager/StegSeek
 cbfdac6008f9cab4083784cbd1874f76618d2a97
 ```
 
-![](image-6.png)
+![](images/img-6.png)
 
 The extracted file contained the SHA1 hash `cbfdac6008f9cab4083784cbd1874f76618d2a97`, which is the SHA1 of the string `secret`. The password `secret` was tried sequentially against all remaining users.
 
@@ -518,7 +518,7 @@ f0ea495293070da50a1c6e483a0525e7
 
 Full root access was achieved and the root flag was captured.
 
-![](image-7.png)
+![](images/img-7.png)
 
 ---
 

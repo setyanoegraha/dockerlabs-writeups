@@ -75,7 +75,7 @@ The scan revealed SSH on port 22 and Apache on port 80 titled "Laboratorio de Op
 
 The web application presented three Open Redirect laboratories designed to teach progressively harder bypass techniques.
 
-![](image.png)
+![](images/img.png)
 
 **4. Laboratory 1: Unfiltered Open Redirect**
 
@@ -181,7 +181,7 @@ All three laboratory challenges were solved successfully.
 
 With the username and password for `balu` recovered from the application context, SSH access was established.
 
-![](image-1.png)
+![](images/img-1.png)
 
 ```bash
 ┌──(ouba㉿CLIENT-DESKTOP)-[/tmp/dl/redirection]

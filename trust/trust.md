@@ -117,7 +117,7 @@ Four paths responded with HTTP 200. Three of them (`/`, `/index.html`, and `/ico
 
 **4.** Open `http://172.19.0.2/secret.php` to inspect its contents:
 
-![](image.png)
+![](images/img.png)
 
 The page disclosed a username in clear text: **`mario`**. This single piece of information, hidden behind a non-indexed PHP file, was the pivot point for the entire attack. With a confirmed username and an active SSH daemon, a credential brute force was the natural and immediate next move.
 

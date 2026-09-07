@@ -75,11 +75,11 @@ The scan revealed SSH on port 22 and Apache on port 80 titled "Advertencia: LeFv
 
 The web application served a warning-themed page.
 
-![](image.png)
+![](images/img.png)
 
 Inspecting the application further revealed an `ejemplos.php` script with an `images` parameter.
 
-![](image-1.png)
+![](images/img-1.png)
 
 **4. Reading /etc/passwd via LFI**
 

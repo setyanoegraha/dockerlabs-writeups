@@ -50,7 +50,7 @@ Nmap done: 1 IP address (1 host up) scanned in 7.90 seconds
 
 The scan revealed a single open service, Apache HTTP on port 80, serving a page titled "Upload here your file".
 
-![alt text](image.png)
+![alt text](images/img.png)
 
 **3. Directory Enumeration**
 
@@ -105,7 +105,7 @@ A standard PHP reverse shell was copied from the local payload collection and cu
 
 The modified `shell.php` was uploaded through the web form. The application accepted the file without any filtering.
 
-![alt text](image-1.png)
+![alt text](images/img-1.png)
 
 **3. Catching the Shell and Upgrading the TTY**
 

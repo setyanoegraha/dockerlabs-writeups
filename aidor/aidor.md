@@ -159,7 +159,7 @@ ________________________________________________
 
 The enumeration revealed 54 valid user IDs ranging from 3 to 56. Each dashboard page exposed the authenticated user's profile information along with their SHA-256 password hash rendered directly in the HTML. Upon reviewing the discovered accounts, the user `aidor` immediately stood out as a high-priority target due to sharing its name with the machine itself.
 
-![alt text](image.png)
+![alt text](images/img.png)
 
 ---
 
@@ -169,7 +169,7 @@ The enumeration revealed 54 valid user IDs ranging from 3 to 56. Each dashboard 
 
 The SHA-256 hash extracted from the `aidor` account's dashboard page via the IDOR vulnerability was submitted to hashcat for offline cracking against the rockyou wordlist.
 
-![alt text](image-1.png)
+![alt text](images/img-1.png)
 
 With the plaintext password recovered, SSH access was established as the user `aidor`.
 
@@ -248,7 +248,7 @@ def create_db():
 
 The hash `aa87ddc5b4c24406d26ddad771ef44b0` embedded in the commented code block was cracked to recover the root password.
 
-![alt text](image-2.png)
+![alt text](images/img-2.png)
 
 ### Root Shell
 

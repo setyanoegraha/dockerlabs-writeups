@@ -68,7 +68,7 @@ Nmap done: 1 IP address (1 host up) scanned in 9.44 seconds
 
 3. Web content inspection on port 80 confirmed a report generation interface.
 
-![](image.png)
+![](images/img.png)
 
 4. Directory enumeration discovered `upload.php`, `upload.html`, and `/old/`, which expanded the application attack surface.
 
@@ -103,21 +103,21 @@ Finished
 
 5. The upload page was reviewed as a candidate entry point for server side execution.
 
-![](image-1.png)
+![](images/img-1.png)
 
 ## Initial Access
 
 1. Attempted upload abuse shifted into command injection discovery when backend processing accepted shell metacharacters in report input.
 
-![](image-2.png)
+![](images/img-2.png)
 
 2. Command injection was validated using `test ; cat /etc/passwd`, which exposed local users and confirmed direct command execution.
 
-![](image-3.png)
+![](images/img-3.png)
 
 3. The same vector was used to extract SSH private key material from the user home directory with `test ; cat /home/samara/.ssh/id_rsa`.
 
-![](image-4.png)
+![](images/img-4.png)
 
 4. The recovered key was stored locally with strict file permissions, then used for SSH authentication as `samara`.
 

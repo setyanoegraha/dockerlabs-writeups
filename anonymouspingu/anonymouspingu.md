@@ -146,9 +146,9 @@ drwxr-xr-x    1 0        0            4096 Apr 28  2024 ..
 
 Write access to `upload/` was confirmed. The web application was inspected to confirm the `upload/` directory was accessible over HTTP.
 
-![](image.png)
+![](images/img.png)
 
-![](image-1.png)
+![](images/img-1.png)
 
 A PHP webshell was uploaded via FTP.
 
@@ -162,7 +162,7 @@ local: shell.php remote: shell.php
 31 bytes sent in 00:00 (45.52 KiB/s)
 ```
 
-![](image-2.png)
+![](images/img-2.png)
 
 **4. Triggering the Reverse Shell**
 
@@ -176,7 +176,7 @@ listening on [any] 4444 ...
 
 The webshell was browsed at `/upload/shell.php` and the reverse shell payload was triggered.
 
-![](image-3.png)
+![](images/img-3.png)
 
 **5. Catching the Shell and Stabilising the TTY**
 

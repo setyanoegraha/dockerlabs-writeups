@@ -185,7 +185,7 @@ The credentials `admin:chocolate` were recovered, granting access to the web app
 
 After logging in with the discovered credentials, the web panel revealed a username: `balutin`.
 
-![](image.png)
+![](images/img.png)
 
 ### SSH Access as balutin
 

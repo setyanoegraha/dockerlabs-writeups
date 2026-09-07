@@ -50,7 +50,7 @@ Nmap done: 1 IP address (1 host up) scanned in 12.62 seconds
 
 Visiting port 3000 in a web browser confirms the presence of a Grafana login page, which helps us identify the exact version of the service.
 
-![](image.png)
+![](images/img.png)
 
 ---
 

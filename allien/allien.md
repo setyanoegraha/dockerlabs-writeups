@@ -150,7 +150,7 @@ eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhdHJpYW5pN0Blc2VlbWViLmRsIiw
 
 The structure of this data indicates it is a JSON Web Token (JWT), identifiable by its three distinct sections separated by periods. Decoding this JWT through CyberChef or similar tools reveals valuable intelligence embedded within the payload.
 
-![](image.png)
+![](images/img.png)
 
 The decoded payload contains:
 
@@ -388,7 +388,7 @@ The vulnerability lies in how the `service` command processes its arguments. Whe
 
 Consulting GTFOBins or similar resources confirms that this misconfiguration can be exploited to spawn a root shell by invoking `/bin/sh` through the service binary.
 
-![](image-1.png)
+![](images/img-1.png)
 
 The exploitation is straightforward: by passing `../../bin/sh` as the argument to `sudo service`, the attacker tricks the service command into executing `/bin/sh` with root privileges.
 

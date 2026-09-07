@@ -136,9 +136,9 @@ secret                  [Status: 200, Size: 3870, Words: 678, Lines: 89, Duratio
 
 The parameter `secret` was identified. Browsing `?secret=/etc/passwd` and `?secret=/home/vaxei/.ssh/id_rsa` confirmed LFI and returned the SSH private key.
 
-![](image.png)
+![](images/img.png)
 
-![](image-1.png)
+![](images/img-1.png)
 
 **5. Saving the Key and Connecting via SSH**
 

@@ -112,7 +112,7 @@ The enumeration surfaced a `script.js` file. Inspecting its contents revealed a 
 
 **4. Inspecting script.js**
 
-![](image.png)
+![](images/img.png)
 
 The `script.js` file contained a hardcoded reference to the path `.env_de_baluchingon`.
 

@@ -45,7 +45,7 @@ The scan results confirmed a single exposed service: an Apache web server versio
 
 Navigating to the root web directory revealed the application's landing page:
 
-![](image.png)
+![](images/img.png)
 
 The homepage displayed a Scooby-Doo themed interface, but provided minimal attack surface from visible elements. To discover hidden directories and files, Gobuster was deployed with a comprehensive wordlist:
 
@@ -121,7 +121,7 @@ Three critical resources were identified: an `uploads` directory (likely where u
 
 Accessing the `/themes/archivo.html` endpoint revealed a file upload form:
 
-![](image-1.png)
+![](images/img-1.png)
 
 The interface provided a basic file upload mechanism. Initial testing revealed that the application attempted to restrict file uploads by checking extensions, but this validation could be bypassed using a double extension technique. By appending a valid image extension (`.jpg`) after the malicious PHP extension (`.php`), the filter could be circumvented while maintaining the ability to execute PHP code.
 
@@ -166,7 +166,7 @@ listening on [any] 4444 ...
 
 The `shell.php.jpg` file was uploaded through the web interface, and then accessed by navigating to its location in the `/themes/uploads/` directory:
 
-![](image-2.png)
+![](images/img-2.png)
 
 Upon accessing the uploaded file, the reverse shell successfully connected back to the attacking machine, granting initial access as the `www-data` user:
 

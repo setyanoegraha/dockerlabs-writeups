@@ -64,7 +64,7 @@ The scan revealed SSH on port 22 and an Apache web server on port 80. The HTTP t
 
 Visiting the web application revealed a minimal login form accepting a username (`name`) and password.
 
-![](image.png)
+![](images/img.png)
 
 **4. Testing the SQL Injection Payload**
 

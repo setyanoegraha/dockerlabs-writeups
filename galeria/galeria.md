@@ -158,7 +158,7 @@ drwxr-xr-x 3 ouba ouba      4096 Jul 27 19:22 ..
 
 Reviewing the downloaded `.htaccess` file revealed a critical misconfiguration: a rule that instructed Apache to execute files with a `.php.jpg` double extension as PHP code. This meant that a PHP payload disguised with a `.jpg` extension suffix could be uploaded and executed on the server.
 
-![](image.png)
+![](images/img.png)
 
 ### Preparing and Uploading the PHP Webshell
 
@@ -166,13 +166,13 @@ Reviewing the downloaded `.htaccess` file revealed a critical misconfiguration: 
 
 A minimal PHP webshell was crafted with the `.php.jpg` double extension to satisfy the `.htaccess` execution rule.
 
-![](image-4.png)
+![](images/img-4.png)
 
 **7. Uploading via FTP**
 
 The webshell was uploaded into the writable `ftp/` directory via the anonymous FTP session.
 
-![](image-1.png)
+![](images/img-1.png)
 
 **8. Confirming the Upload**
 
@@ -199,19 +199,19 @@ The `shell.php.jpg` file was confirmed to be present on the server.
 
 The uploaded webshell was accessed through the web server to verify Remote Code Execution.
 
-![](image-2.png)
+![](images/img-2.png)
 
 **10. Confirming RCE**
 
 Command execution was confirmed through the webshell response.
 
-![](image-3.png)
+![](images/img-3.png)
 
 **11. Delivering the Reverse Shell Payload**
 
 A reverse shell command was triggered through the webshell.
 
-![](image-5.png)
+![](images/img-5.png)
 
 **12. Catching the Shell and Stabilising the TTY**
 
@@ -278,7 +278,7 @@ User www-data may run the following commands on b68ea44b2ecc:
 
 The `-s` flag in nano allows executing an external command as a "spell checker", which was abused to spawn `/bin/sh` as the `gallery` user.
 
-![](image-6.png)
+![](images/img-6.png)
 
 ```bash
 www-data@b68ea44b2ecc:/var$ sudo -u gallery nano -s /bin/sh

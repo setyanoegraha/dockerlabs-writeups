@@ -77,7 +77,7 @@ The scan revealed SSH on port 22 and an Apache web server on port 80 titled "The
 
 The web application served a Walking Dead themed CTF page. Visual clues within the page content pointed toward a hidden directory and a concealed PHP webshell file.
 
-![](image.png)
+![](images/img.png)
 
 **4. Fuzzing the Webshell Parameter**
 

@@ -75,55 +75,55 @@ The scan revealed SSH on port 22 and Apache on port 80 titled "Laboratorio de Cr
 
 The web application presented four XSS laboratories designed to teach different injection and bypass techniques.
 
-![](image.png)
+![](images/img.png)
 
 **4. Laboratory 1: Unfiltered Reflected XSS**
 
 Laboratory 1 applied no HTML filtering. The input was reflected directly into the page. The payload `<img src=x onerror=alert(1)>` was injected without modification.
 
-![](image-1.png)
+![](images/img-1.png)
 
 Source code of laboratory 1:
 
-![](image-2.png)
+![](images/img-2.png)
 
 Payload used: `<img src=x onerror=alert(1)>`
 
-![](image-3.png)
+![](images/img-3.png)
 
 **5. Laboratory 2: Reflected XSS with Domain Disclosure**
 
 Laboratory 2 similarly lacked sanitisation. The exercise required demonstrating access to `document.domain` to show the domain context of the reflected script execution.
 
-![](image-4.png)
+![](images/img-4.png)
 
 Source code of laboratory 2:
 
-![](image-6.png)
+![](images/img-6.png)
 
 Payload used: `<img src=x onerror=alert(document.domain)>`
 
-![](image-5.png)
+![](images/img-5.png)
 
 **6. Laboratory 3: URL-Encoded XSS Bypass**
 
 Laboratory 3 applied a filter that blocked raw angle brackets in the input. Providing the payload with URL-encoded characters bypassed the filter, as the server decoded the value before reflecting it into the page.
 
-![](image-7.png)
+![](images/img-7.png)
 
 Source code of laboratory 3:
 
-![](image-9.png)
+![](images/img-9.png)
 
 Payload used: `<img%20src=x%20onerror=alert(1)>`
 
-![](image-8.png)
+![](images/img-8.png)
 
 **7. Laboratory 4: GET Parameter Reflection**
 
 Laboratory 4 reflected the `data` GET parameter directly into the HTML response body inside a `#output` div with no escaping. A curl request with a test value confirmed the reflection behaviour, and a second request with a `<script>` payload confirmed unsanitised injection.
 
-![](image-10.png)
+![](images/img-10.png)
 
 Confirming the reflection with a test value:
 
@@ -202,11 +202,11 @@ Confirming unsanitised script injection:
     </div>
 ```
 
-![](image-11.png)
+![](images/img-11.png)
 
 All four laboratory challenges were completed. The credential for SSH access was available from the application context.
 
-![](image-12.png)
+![](images/img-12.png)
 
 ### SSH Access as balu
 

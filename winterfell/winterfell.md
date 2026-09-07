@@ -314,7 +314,7 @@ Finished
 ===============================================================
 ```
 
-![alt text](image.png)
+![alt text](images/img.png)
 
 Gobuster found an `index.html`, a `styles.css`, and a redirected `dragon` directory, which suggests the web application holds further Game of Thrones themed content. The SMB attack surface remained the most promising, so the focus shifted back to the Samba shares.
 

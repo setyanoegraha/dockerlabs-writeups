@@ -40,7 +40,7 @@ The scan revealed a single open port: **TCP 8080** hosting **Apache Tomcat 9.0.8
 
 **2.** Open the root page of the Tomcat server to verify the deployment and confirm the version banner:
 
-![](image.png)
+![](images/img.png)
 
 The default Tomcat landing page confirmed the version as 9.0.88. The page's navigation links pointed directly toward the Manager App and the Host Manager, both of which were prime targets for credential abuse.
 
@@ -86,13 +86,13 @@ Four paths of interest were confirmed: `/docs`, `/examples`, `/host-manager`, an
 
 **4.** Navigate to the `/host-manager` interface to inspect its content and check for any disclosed credentials:
 
-![](image-1.png)
+![](images/img-1.png)
 
 The Host Manager page disclosed a set of valid administrative credentials that had been left at their default values. These credentials were immediately applicable to the Tomcat Manager at `/manager`, since Tomcat's shared `tomcat-users.xml` configuration governs access to both administrative interfaces.
 
 **5.** Use the recovered credentials to authenticate to the Tomcat Manager application:
 
-![](image-2.png)
+![](images/img-2.png)
 
 Authentication succeeded. The Tomcat Manager dashboard was now fully accessible, presenting a list of currently deployed applications and, critically, a WAR file upload section at the bottom of the page. This upload facility is the standard vector for deploying malicious payloads on a Tomcat instance where manager credentials have been compromised.
 
@@ -116,7 +116,7 @@ The `java/jsp_shell_reverse_tcp` payload was selected because it is natively exe
 
 **7.** Upload `pwn.war` through the Tomcat Manager's WAR deployment form:
 
-![](image-3.png)
+![](images/img-3.png)
 
 The upload was accepted and Tomcat registered `pwn.war` as a new deployed application context at `/pwn`. The application was in a running state, meaning the JSP payload inside would execute immediately upon its first HTTP request.
 

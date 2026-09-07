@@ -96,7 +96,7 @@ Nmap done: 1 IP address (1 host up) scanned in 28.10 seconds
 
 4. Directory enumeration was initiated and visual evidence confirmed an image directory worth deeper inspection.
 
-![image directory evidence](image.png)
+![image directory evidence](images/img.png)
 
 ## Initial Access
 
@@ -257,7 +257,7 @@ User lucas may run the following commands on 3f5b3a0e5d46:
     (andy) NOPASSWD: /bin/sed
 ```
 
-![GTFO technique reference](image-1.png)
+![GTFO technique reference](images/img-1.png)
 
 2. The `sed` execution primitive was used to spawn a shell as `andy`.
 

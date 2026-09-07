@@ -70,11 +70,11 @@ Only port 80 was open. The page title was "Pressenter CTF".
 
 The web application on port 80 served the default Pressenter CTF page.
 
-![](image.png)
+![](images/img.png)
 
 The virtual host `pressenter.hl` was resolved and the WordPress installation was inspected.
 
-![](image-1.png)
+![](images/img-1.png)
 
 **4. Full WPScan Enumeration**
 
@@ -313,7 +313,7 @@ Finished
 
 **6. Cracking pressi's Password via XML-RPC**
 
-![](image-2.png)
+![](images/img-2.png)
 
 ```bash
 ┌──(ouba㉿CLIENT-DESKTOP)-[/tmp/dl/pressenter]
@@ -332,21 +332,21 @@ The password `dumbass` was cracked for user `pressi` via XML-RPC.
 
 The credentials `pressi:dumbass` were used to log into the WordPress admin panel.
 
-![](image-3.png)
+![](images/img-3.png)
 
 From the Appearance theme editor, the active theme's `functions.php` was replaced with the p0wny-shell PHP web shell from `https://github.com/flozz/p0wny-shell/blob/master/shell.php`.
 
-![](image-4.png)
+![](images/img-4.png)
 
-![](image-5.png)
+![](images/img-5.png)
 
-![](image-6.png)
+![](images/img-6.png)
 
 The p0wny-shell confirmed execution in the theme directory but lacked a real TTY. A bash reverse shell was sent through it to a waiting netcat listener.
 
 **8. Sending the Reverse Shell Through p0wny-shell**
 
-![](image-7.png)
+![](images/img-7.png)
 
 ```bash
 ┌──(ouba㉿CLIENT-DESKTOP)-[/tmp/dl/pressenter]
@@ -354,7 +354,7 @@ The p0wny-shell confirmed execution in the theme directory but lacked a real TTY
 listening on [any] 4444 ...
 ```
 
-![](image-8.png)
+![](images/img-8.png)
 
 **9. Catching the Shell and Stabilising the TTY**
 

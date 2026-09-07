@@ -76,7 +76,7 @@ The scan revealed two open ports: SSH on 22 and an Apache web server on 80. The 
 
 Browsing the web application at `http://172.17.0.2/` revealed a fake Windows-themed news portal. The page content contained a reference to the username `pipe` and embedded a password hint — `WinServerRootFakeNews` — written in plain sight within the page body, capitalized per word.
 
-![](image.png)
+![](images/img.png)
 
 The username `pipe` was identified as a likely target for SSH access.
 

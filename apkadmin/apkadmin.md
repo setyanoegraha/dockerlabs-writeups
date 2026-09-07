@@ -68,7 +68,7 @@ Nmap done: 1 IP address (1 host up) scanned in 9.29 seconds
 
 It is about an android pentest challenge.
 
-![](image.png)
+![](images/img.png)
 
 The APK was downloaded and decompiled.
 

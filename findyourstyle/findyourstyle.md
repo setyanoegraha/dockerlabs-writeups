@@ -76,9 +76,9 @@ Only port 80 was open. The HTTP generator header immediately identified Drupal 8
 
 The web application served the "Find your own Style" Drupal 8 site. The Drupal version was confirmed directly from the interface.
 
-![](image.png)
+![](images/img.png)
 
-![](image-1.png)
+![](images/img-1.png)
 
 **4. Exploiting Drupalgeddon 2 with Metasploit**
 

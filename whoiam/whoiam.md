@@ -66,7 +66,7 @@ Nmap done: 1 IP address (1 host up) scanned in 11.64 seconds
 
 The scan revealed a single open service, Apache HTTP on port 80, running a WordPress installation version 6.5.4.
 
-![alt text](image.png)
+![alt text](images/img.png)
 
 **3. Directory Enumeration**
 
@@ -102,7 +102,7 @@ Finished
 
 Alongside the standard WordPress directories, Gobuster found an unusual `backups` directory.
 
-![alt text](image-1.png)
+![alt text](images/img-1.png)
 
 **4. Recovering the Database Backup**
 
@@ -151,9 +151,9 @@ drwxr-xr-x 4 kali kali      4096 Aug  7 18:53 ..
 
 The extracted `29DBMay` file contained a credentials table with the username `developer` and the password `2wmy3KrGDRD%RsA7Ty5n71L^`.
 
-![alt text](image-2.png)
+![alt text](images/img-2.png)
 
-![alt text](image-3.png)
+![alt text](images/img-3.png)
 
 **5. WordPress Plugin Enumeration**
 
@@ -513,7 +513,7 @@ https://github.com/dnr6419/CVE-2021-24145
 
 The exploit authenticated with the `developer` account and uploaded a webshell to `wp-content/uploads/shell.php`.
 
-![alt text](image-4.png)
+![alt text](images/img-4.png)
 
 **2. Setting Up the Listener**
 
@@ -525,7 +525,7 @@ A netcat listener was started on the attacking machine to catch the incoming she
 listening on [any] 4444 ...
 ```
 
-![alt text](image-5.png)
+![alt text](images/img-5.png)
 
 **3. Catching the Shell and Upgrading the TTY**
 

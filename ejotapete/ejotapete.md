@@ -100,7 +100,7 @@ Finished
 
 A Drupal installation is discovered at `/drupal/`, redirecting with a 301. Navigating to it in the browser confirms a functioning Drupal CMS instance.
 
-![Drupal installation discovered at /drupal/](image.png)
+![Drupal installation discovered at /drupal/](images/img.png)
 
 ---
 

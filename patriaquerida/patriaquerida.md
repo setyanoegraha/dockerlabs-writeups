@@ -109,9 +109,9 @@ An `index.php` file was discovered with a notably small 110-byte response, disti
 
 Browsing `index.php` revealed a PHP page that appeared to accept a parameter for including content, suggesting a Local File Inclusion vulnerability.
 
-![](image.png)
+![](images/img.png)
 
-![](image-1.png)
+![](images/img-1.png)
 
 ### Discovering the LFI Parameter
 

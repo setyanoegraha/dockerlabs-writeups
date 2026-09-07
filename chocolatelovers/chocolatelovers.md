@@ -49,9 +49,9 @@ Nmap done: 1 IP address (1 host up) scanned in 8.95 seconds
 
 The scan revealed a single open service, Apache HTTP on port 80, serving the default Ubuntu landing page.
 
-![alt text](image.png)
+![alt text](images/img.png)
 
-![alt text](image-1.png)
+![alt text](images/img-1.png)
 
 **3. Directory Enumeration**
 
@@ -105,21 +105,21 @@ Gobuster revealed a full Nibbleblog installation under `/nibbleblog/`, complete 
 
 The Nibbleblog administration interface accepted the default credentials `admin:admin`.
 
-![alt text](image-2.png)
+![alt text](images/img-2.png)
 
-![alt text](image-3.png)
+![alt text](images/img-3.png)
 
 **2. Installing the My Image Plugin**
 
 From the plugins management screen, the My Image plugin was installed. This plugin provides an image uploader that was later repurposed to deliver a PHP webshell.
 
-![alt text](image-4.png)
+![alt text](images/img-4.png)
 
 The plugin exposes an upload form for media files.
 
-![alt text](image-5.png)
+![alt text](images/img-5.png)
 
-![alt text](image-6.png)
+![alt text](images/img-6.png)
 
 **3. Preparing the Reverse Shell Payload**
 
@@ -140,7 +140,7 @@ A standard PHP reverse shell was copied from the local payload collection and cu
 
 The modified `shell.php` was uploaded through the My Image plugin. The file was accepted by the uploader.
 
-![alt text](image-7.png)
+![alt text](images/img-7.png)
 
 The file has been uploaded successfully.
 
@@ -158,7 +158,7 @@ listening on [any] 4444 ...
 
 The uploaded PHP file was requested directly in the browser, firing the reverse shell back to the listener.
 
-![alt text](image-8.png)
+![alt text](images/img-8.png)
 
 **7. Catching the Shell and Upgrading the TTY**
 

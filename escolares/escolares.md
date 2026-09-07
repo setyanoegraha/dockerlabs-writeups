@@ -755,7 +755,7 @@ login as luisillo with that pass.
 and go to wp file manager under wp-admin add new file shell.php
 ```
 
-![](image-1.png)
+![](images/img-1.png)
 
 ```bash
 ┌──(ouba㉿CLIENT-DESKTOP)-[/tmp/escolares]
@@ -840,7 +840,7 @@ User luisillo may run the following commands on 757bd9d6c9a2:
 
 **2. Use the allowed awk path for root shell execution through GTFOBins technique.**
 
-![](image.png)
+![](images/img.png)
 
 ```bash
 luisillo@757bd9d6c9a2:~$ sudo /usr/bin/awk 'BEGIN {system("sudo -i")}'

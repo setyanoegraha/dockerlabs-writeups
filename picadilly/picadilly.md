@@ -127,7 +127,7 @@ Two paths are discovered: the main application entry point at `/index.php` and a
 
 Inspecting the application reveals a file upload form with no meaningful server-side validation. A PHP webshell is crafted and uploaded directly through the interface.
 
-![](image-1.png)
+![](images/img-1.png)
 
 Once the file is uploaded, it becomes accessible through the `/uploads/` directory. The webshell is triggered with a simple `cmd` parameter to confirm Remote Code Execution (RCE) as the web server process user.
 
@@ -208,7 +208,7 @@ drwxr-xr-x 1 root  root  4096 May 18  2024 ..
 
 The previously decoded password was likely `easycrazy` instead of `easycrxazy` is applied to switch to the `mateo` account. 
 
-![](image-2.png)
+![](images/img-2.png)
 
 ```bash
 mateo@22f97b44a5f9:~$ id;whoami;hostname;pwd;ls -la
@@ -243,7 +243,7 @@ User mateo may run the following commands on 22f97b44a5f9:
 
 The output is definitive: `mateo` can run `/usr/bin/php` as any user, including root, without a password. This is a well-documented privilege escalation vector catalogued on GTFOBins.
 
-![](image-3.png)
+![](images/img-3.png)
 
 The GTFOBins technique for PHP with sudo instructs passing a `system()` call via the `-r` flag. Using `system("sudo -i")` spawns an interactive root shell directly.
 

@@ -3,7 +3,7 @@
 <div align="center">
 
 ![Platform](https://img.shields.io/badge/Platform-DockerLabs-critical?style=flat-square)
-![Machines](https://img.shields.io/badge/Machines-74-blue?style=flat-square)
+![Machines](https://img.shields.io/badge/Machines-75-blue?style=flat-square)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-informational?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square)
 ![Language](https://img.shields.io/badge/Language-English-lightgrey?style=flat-square)
@@ -16,7 +16,7 @@
 
 ## Overview
 
-This repository contains comprehensive technical documentation for penetration testing exercises conducted on the DockerLabs platform. DockerLabs is a community driven, container based boot2root platform where each machine is shipped as a Docker archive deployed locally through an automated provisioning script. The collection represents systematic security analysis across 74 machines, emphasizing methodological rigor and professional reporting standards over simple flag acquisition.
+This repository contains comprehensive technical documentation for penetration testing exercises conducted on the DockerLabs platform. DockerLabs is a community driven, container based boot2root platform where each machine is shipped as a Docker archive deployed locally through an automated provisioning script. The collection represents systematic security analysis across 75 machines, emphasizing methodological rigor and professional reporting standards over simple flag acquisition.
 
 ## Portfolio Philosophy
 
@@ -57,7 +57,7 @@ DockerLabs machines are provisioned locally with the platform provided `auto_dep
 
 **Repository Statistics:**
 
-- 74 completed machine writeups with full technical documentation
+- 75 completed machine writeups with full technical documentation
 - Consistent executive summary format implemented across all reports
 - Visual evidence integrated inline throughout all reports
 - Predominantly Easy and Very Easy difficulty, covering a wide spread of web and service exploitation techniques
@@ -93,7 +93,7 @@ The raw material is reorganized into the standardized reporting format:
 - Visual proof is verified for accuracy and completeness
 - The final report is formatted according to the standardized template
 
-This workflow ensures that each of the 74 machine reports maintains consistent quality and professional presentation standards while preserving the integrity of the original manual engagement.
+This workflow ensures that each of the 75 machine reports maintains consistent quality and professional presentation standards while preserving the integrity of the original manual engagement.
 
 ---
 
@@ -204,7 +204,7 @@ The writeups in this repository demonstrate proficiency across the complete pene
 
 ## Machines Inventory
 
-### Completed Virtual Machines (74)
+### Completed Virtual Machines (75)
 
 <details>
 <summary><b>View Complete Machine List</b></summary>
@@ -242,6 +242,7 @@ The writeups in this repository demonstrate proficiency across the complete pene
 | galeria | Raul A | Easy | Anonymous FTP exposing web root, .htaccess, Gallery application |
 | gotham | TheBat | Easy | JWT auth, default creds guest guest, secret batman crack |
 | grooti | Grooti16 | Easy | Web info leak, exposed MySQL, privilege escalation |
+| hannah_coffee | noneofyour | Fácil | PHP LFI via studio param, FTP log poisoning to RCE, sudo debugfs + base92 credential, cap_setuid Python binary to root |
 | hedgehog | AnkbNikas | Very Easy | Web root word tails as username hint, SSH access |
 | hiddencat | El Pingüino de Mario | Easy | Tomcat AJP 8009, Ghostcat LFI, privilege escalation |
 | influencerhate | El Pingüino de Mario | Easy | HTTP Basic Auth, Hydra default creds, privilege escalation |
@@ -362,7 +363,7 @@ To assess candidate suitability:
 1. Examine the Portfolio Philosophy section for professional approach
 2. Review 2 to 3 sample machine writeups for documentation quality
 3. Evaluate the Technical Skills Matrix against position requirements
-4. Assess the scale and consistency of the portfolio (74 machines documented)
+4. Assess the scale and consistency of the portfolio (75 machines documented)
 
 ### For Students and CTF Players
 
@@ -434,7 +435,7 @@ For professional inquiries or collaboration proposals, contact information can b
 
 ### Current Status (August 2026)
 
-- 74 machine writeups completed with full documentation
+- 75 machine writeups completed with full documentation
 - Standardized executive summary format implemented across all reports
 - Multimodal documentation workflow operational
 - Coverage spanning web, service, CMS, and privilege escalation technique categories
